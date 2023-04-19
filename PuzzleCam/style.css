@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    overflow:hidden;
+    overscroll-behavior:none;
+    font-family:Arial;
+}
+
+.menu{
+    width:80vmin;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(255,255,255,0.6);
+    text-align:center;
+    padding:5vmin;
+    border:1vmin rgba(0,0,0,0.6) solid;
+    font-size:7vmin;
+    border-radius: 5px;
+}
+
+button{
+    font-size:7vmin;
+    background:aquamarine;
+    color:rgb(0, 61, 110);
+    cursor:pointer;
+    transition:0.3s;
+    border:none;
+    border-radius:1vmin;
+    font-weight: bold;
+    letter-spacing: 0.7;
+}
+button:hover{
+    background:rgb(255, 175, 176);
+    color:rgb(152, 0, 0);
+}
+
+button:disabled{
+    background:lightgray;
+    color:gray;
+    cursor:default;
+}
+
+select{
+    font-size:7vmin;
+    cursor:pointer;
+    border:none;
+    border-radius:1vmin;
+    outline:none;
+}
+
+#time{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%);
+}
+
+#scoresContainer{
+    height:43vh;
+    overflow:auto;
+}
+
+input{
+    font-size:7vmin;
+    border-radius:1vmin;
+    width:50%;
+    text-align:center;
+}
+#made-by{
+    font-size: 25px;
+    text-align: right;
+    border:2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 61, 110);
+    background-color: aquamarine;
+    border-radius: 5px;
+    letter-spacing: .9px;
+}
+#made-by-box {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: flex-end;
+    width: 140px;
+    bottom:4px;
+}
+select{
+    color: rgb(0, 61, 110);
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+select:hover{
+    background-color: rgb(255, 175, 176);
+    color: rgb(152, 0, 0);
+}
